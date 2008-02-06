@@ -16,38 +16,37 @@ requires:
   App::Ack: 1.76
   App::Addex: 0.013
   App::Addex::AddressBook::Apple: 0.006
-  App::Cmd: 0.012
-  CPAN::Mini: 0.566
-  CPAN::Reporter: 1.0602
+  App::Cmd: 0.010
+  CPAN: 1.87
+  CPAN::Mini: 0.563
+  CPAN::Reporter: 0
   Config::INI: 0.011
   Data::GUID: 0.043
   DateTime: 0.41
-  Email::Filter: 1.031
+  Email::Filter: 1.02
   Email::MIME: 1.861
   Exception::Class: 1.23
-  File::Next: 1.02
-  File::Temp: 0.20
-  File::Tempdir: 0.02
-  Getopt::Long::Descriptive: 0.06
-  HTML::Element: 3.23
-  LWP: 5.808
+  HTML::Element: 3.22
   List::MoreUtils: 0.21
   Mac::Glue: 1.30
-  Mixin::ExtraFields: 0.007
+  Mixin::ExtraFields: 0.005
   Mixin::ExtraFields::Param: 0.011
+  Module::CoreList: 2.13
   Module::Install: 0.68
   Moose: 0.35
   MooseX::POE: 0.07
   MooseX::Singleton: 0.05
+  POE::Component::IRC: 0
   PPI: 1.201
-  Params::Util: 0.31
+  Params::Util: 0.23
   Perl::Critic: 1.080
   Perl::Critic::Lax: 0.007
-  Scalar::Util: 1.19
-  Slash::Client::Journal: 0.01
+  Rubric: 0.142
+  Scalar::Util: 1.18
+  Slash::Client::Journal: 0
   Sub::Exporter: 0.978
-  Text::Markdown: 1.0.5
-  Tie::CPHash: 1.03
+  Text::Markdown: 1.0.2
+  Tie::CPHash: 1.02
   YAML::Syck: 1.01
-  pip: 0.13
-version: undef
+  pip: 0.12
+version: 1.000

@@ -1,18 +1,18 @@
---- 
-author: 
-  - Ricardo SIGNES <rjbs@cpan.org>
+---
+author:
+  - 'Ricardo SIGNES <rjbs@cpan.org>'
 distribution_type: module
-generated_by: Module::Install version 0.68
+generated_by: 'Module::Install version 0.71'
 license: perl
-meta-spec: 
+meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.3.html
   version: 1.3
 name: Task-BeLike-RJBS
-no_index: 
-  directory: 
+no_index:
+  directory:
     - inc
     - t
-requires: 
+requires:
   App::Ack: 1.76
   App::Addex: 0.013
   App::Addex::AddressBook::Apple: 0.006
@@ -49,4 +49,5 @@ requires:
   Tie::CPHash: 1.02
   YAML::Syck: 1.01
   pip: 0.12
-version: 1.000
+tests: 't/*.t xt/*.t'
+version: 1.001

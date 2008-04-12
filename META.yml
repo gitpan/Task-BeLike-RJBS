@@ -1,6 +1,7 @@
 ---
+abstract: 'be more like RJBS -- use the modules he likes!'
 author:
-  - 'Ricardo SIGNES <rjbs@cpan.org>'
+  - 'This is free software, released under the'
 distribution_type: module
 generated_by: 'Module::Install version 0.71'
 license: perl
@@ -41,13 +42,12 @@ requires:
   Params::Util: 0.23
   Perl::Critic: 1.080
   Perl::Critic::Lax: 0.007
-  Rubric: 0.142
   Scalar::Util: 1.18
   Slash::Client::Journal: 0
   Sub::Exporter: 0.978
   Text::Markdown: 1.0.2
   Tie::CPHash: 1.02
   YAML::Syck: 1.01
+  perl: 5.8.0
   pip: 0.12
-tests: 't/*.t xt/*.t'
-version: 1.001
+version: 1.002

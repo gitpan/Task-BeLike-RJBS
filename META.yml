@@ -3,11 +3,11 @@ abstract: 'be more like RJBS -- use the modules he likes!'
 author:
   - 'This is free software, released under the'
 distribution_type: module
-generated_by: 'Module::Install version 0.71'
+generated_by: 'Module::Install version 0.77'
 license: perl
 meta-spec:
-  url: http://module-build.sourceforge.net/META-spec-v1.3.html
-  version: 1.3
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
 name: Task-BeLike-RJBS
 no_index:
   directory:
@@ -18,10 +18,13 @@ requires:
   App::Addex: 0.013
   App::Addex::AddressBook::Apple: 0.006
   App::Cmd: 0.010
+  App::Smarkmail: 0
+  App::Whiff: 0
   CPAN: 1.87
   CPAN::Mini: 0.563
   CPAN::Reporter: 0
   Config::INI: 0.011
+  DBD::SQLite: 0
   Data::GUID: 0.043
   DateTime: 0.41
   Email::Filter: 1.02
@@ -29,6 +32,7 @@ requires:
   Exception::Class: 1.23
   HTML::Element: 3.22
   List::MoreUtils: 0.21
+  Log::Dispatchouli: 0
   Mac::Glue: 1.30
   Mixin::ExtraFields: 0.005
   Mixin::ExtraFields::Param: 0.011
@@ -43,11 +47,12 @@ requires:
   Perl::Critic: 1.080
   Perl::Critic::Lax: 0.007
   Scalar::Util: 1.18
-  Slash::Client::Journal: 0
   Sub::Exporter: 0.978
   Text::Markdown: 1.0.2
-  Tie::CPHash: 1.02
-  YAML::Syck: 1.01
+  YAML::XS: 0
   perl: 5.8.0
   pip: 0.12
-version: 1.002
+resources:
+  license: http://dev.perl.org/licenses/
+  repository: http://github.com/rjbs/task-belike-rjbs
+version: 1.003

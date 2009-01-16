@@ -6,7 +6,7 @@ package Module::Install::ExtraTests;
 use Module::Install::Base;
 
 BEGIN {
-  our $VERSION = '0.002';
+  our $VERSION = '0.004';
   our $ISCORE  = 1;
   our @ISA     = qw{Module::Install::Base};
 }
@@ -14,7 +14,7 @@ BEGIN {
 sub extra_tests {
   my ($self) = @_;
 
-  die "extra_tests requested, but no ./xt exists\n" unless -d 'xt';
+  return unless -d 'xt';
   return unless my @content = grep { $_ =~ /^[.]/ } <xt/*>;
 
   die "unknown files found in ./xt" if grep { -f } @content;
@@ -25,7 +25,8 @@ sub extra_tests {
 
   {
     no warnings qw(closure once);
-    package MY;
+    package # The newline tells PAUSE, "DO NOT INDEXING!"
+    MY;
     sub test_via_harness {
       my ($self, $perl, $tests) = @_;
       my $a_str = -d 'xt/author'  ? 'xt/author'  : '';
@@ -34,7 +35,7 @@ sub extra_tests {
       my $is_author = $Module::Install::AUTHOR ? 1 : 0;
 
       return qq{\t$perl "-Iinc" "-MModule::Install::ExtraTests" }
-           . qq{"-e" "Module::Install::ExtraTests::__harness('Test::Harness', $is_author, '$a_str', '$r_str', '$s_str', \$(TEST_VERBOSE), '\$(INST_LIB)', '\$(INST_ARCH LIB)')" $tests\n};
+           . qq{"-e" "Module::Install::ExtraTests::__harness('Test::Harness', $is_author, '$a_str', '$r_str', '$s_str', \$(TEST_VERBOSE), '\$(INST_LIB)', '\$(INST_ARCHLIB)')" $tests\n};
     }
 
     sub dist_test {

@@ -3,7 +3,7 @@ abstract: 'be more like RJBS -- use the modules he likes!'
 author:
   - 'This is free software, released under the'
 distribution_type: module
-generated_by: 'Module::Install version 0.77'
+generated_by: 'Module::Install version 0.79'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -18,15 +18,19 @@ requires:
   App::Addex: 0.013
   App::Addex::AddressBook::Apple: 0.006
   App::Cmd: 0.010
+  App::Nopaste: 0.08
   App::Smarkmail: 0
   App::Whiff: 0
   CPAN: 1.87
   CPAN::Mini: 0.563
   CPAN::Reporter: 0
+  CPAN::Uploader: 0
   Config::INI: 0.011
   DBD::SQLite: 0
   Data::GUID: 0.043
   DateTime: 0.41
+  Dist::Zilla: 1.004
+  Dist::Zilla::Plugin::PodWeaver: 0
   Email::Filter: 1.02
   Email::MIME: 1.861
   Exception::Class: 1.23
@@ -55,4 +59,4 @@ requires:
 resources:
   license: http://dev.perl.org/licenses/
   repository: http://github.com/rjbs/task-belike-rjbs
-version: 1.003
+version: 20090219

@@ -6,8 +6,8 @@
       "version" : 1.4,
       "url" : "http://module-build.sourceforge.net/META-spec-v1.4.html"
    },
-   "generated_by" : "Dist::Zilla version 1.093290",
-   "version" : "20091129.000",
+   "generated_by" : "Dist::Zilla version 1.093380",
+   "version" : "20091203.000",
    "name" : "Task-BeLike-RJBS",
    "author" : [
       "Ricardo Signes <rjbs@cpan.org>"

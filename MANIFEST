@@ -9,3 +9,4 @@ dist.ini
 lib/Task/BeLike/RJBS.pm
 t/release-pod-coverage.t
 t/release-pod-syntax.t
+t/task-bogus.t

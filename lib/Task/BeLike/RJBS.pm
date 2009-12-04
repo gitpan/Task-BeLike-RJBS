@@ -2,9 +2,7 @@ use 5.008;
 use strict;
 use warnings;
 package Task::BeLike::RJBS;
-our $VERSION = '20091129.000';
-
-
+our $VERSION = '20091203.000';
 # ABSTRACT: be more like RJBS -- use the modules he likes!
 
 
@@ -19,7 +17,7 @@ Task::BeLike::RJBS - be more like RJBS -- use the modules he likes!
 
 =head1 VERSION
 
-version 20091129.000
+version 20091203.000
 
 =head1 TASK CONTENTS
 
@@ -36,6 +34,9 @@ App::Ack also gets us File::Next!
 Version 0.17 required because: Gist support via Gist API
 
 =head3 App::Whiff
+
+App::Whiff provides C<whiff>, which replaces C<which>, because C<which> is
+stupid.
 
 =head2 Tools for Working with the CPAN
 
@@ -125,6 +126,10 @@ Version 1.23 required because: provides ->caught
 
 Version 3.22 required because: has proper XML escaping
 
+=head3 JSON 2.12
+
+Version 2.12 required because: fixes unicode handling from ASCII JSON
+
 =head3 List::MoreUtils 0.21
 
 Version 0.21 required because: includes part()
@@ -163,9 +168,7 @@ Version 0.978 required because: supports custom installer/generator
 
 Version 1.0.24 required because: has trust_list_start
 
-=head3 YAML::XS undef
-
-Version undef required because: 
+=head3 YAML::XS
 
 =head1 PENDING INCLUSION:
 

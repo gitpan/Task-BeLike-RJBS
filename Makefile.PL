@@ -11,7 +11,7 @@ WriteMakefile(
   NAME      => 'Task::BeLike::RJBS',
   AUTHOR    => "Ricardo\ Signes\ \<rjbs\@cpan\.org\>",
   ABSTRACT  => "be\ more\ like\ RJBS\ \-\-\ use\ the\ modules\ he\ likes\!",
-  VERSION   => '20091129.000',
+  VERSION   => '20091203.000',
   EXE_FILES => [ qw() ],
   (eval { ExtUtils::MakeMaker->VERSION(6.31) } ? (LICENSE => 'perl') : ()),
   PREREQ_PM    => {
@@ -20,7 +20,7 @@ WriteMakefile(
     "App::Cmd" => '0.303',
     "Sub::Exporter" => '0.978',
     "Dist::Zilla::PluginBundle::RJBS" => '0.093200',
-    "YAML::XS" => 'undef',
+    "YAML::XS" => '',
     "Mixin::ExtraFields" => '0.005',
     "Perl::Critic::Lax" => '0.007',
     "List::MoreUtils" => '0.21',
@@ -55,6 +55,7 @@ WriteMakefile(
     "Email::Filter" => '1.02',
     "Dist::Zilla" => '1.093290',
     "CPAN" => '1.87',
+    "JSON" => '2.12',
   },
   test => {TESTS => 't/*.t'}
 );

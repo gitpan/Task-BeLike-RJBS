@@ -1,6 +1,11 @@
 Revision history for Task-BeLike-RJBS
 
-20091203.000 2009-12-03 20:48:26 America/New_York
+20100611.000 2010-06-11 16:11:21 America/New_York
+             drop pip, Module::Install, YAML::XS
+             add perl 5.10.0
+             bump up some prereqs
+
+20091203.000 2009-12-03
              taskweaver now provides tests
 
 20091129.000 2009-11-29 12:08:39 America/New_York

@@ -1,8 +1,10 @@
-use 5.008;
+use 5.10.0;
 use strict;
 use warnings;
 package Task::BeLike::RJBS;
-our $VERSION = '20091203.000';
+BEGIN {
+  $Task::BeLike::RJBS::VERSION = '20100611.000';
+}
 # ABSTRACT: be more like RJBS -- use the modules he likes!
 
 
@@ -17,7 +19,7 @@ Task::BeLike::RJBS - be more like RJBS -- use the modules he likes!
 
 =head1 VERSION
 
-version 20091203.000
+version 20100611.000
 
 =head1 TASK CONTENTS
 
@@ -29,9 +31,9 @@ Version 1.76 required because: fixes for perl 5.10
 
 App::Ack also gets us File::Next!
 
-=head3 App::Nopaste 0.17
+=head3 App::Nopaste 0.21
 
-Version 0.17 required because: Gist support via Gist API
+Version 0.21 required because: Gist support via Gist API
 
 =head3 App::Whiff
 
@@ -39,6 +41,8 @@ App::Whiff provides C<whiff>, which replaces C<which>, because C<which> is
 stupid.
 
 =head2 Tools for Working with the CPAN
+
+=head3 perl 5.10.0
 
 =head3 CPAN 1.87
 
@@ -50,25 +54,19 @@ Version 1.87 required because: support for sudo on install
 
 =head3 CPAN::Uploader
 
-=head3 pip 0.12
-
-Version 0.12 required because: supports installing from http URIs
-
 =head2 Tools for Building CPAN Distributions
 
-=head3 Dist::Zilla 1.093290
+=head3 Dist::Zilla 4
 
-Version 1.093290 required because: newest available
+Version 4 required because: newest available
 
 =head3 Dist::Zilla::PluginBundle::RJBS 0.093200
 
 Version 0.093200 required because: newest available
 
-=head3 Module::CoreList 2.18
+=head3 Module::CoreList 2.34
 
-Version 2.18 required because: has info on 5.10.1
-
-=head3 Module::Install 0.74
+Version 2.34 required because: has info on 5.13.1
 
 =head3 Perl::Critic 1.080
 
@@ -142,9 +140,9 @@ Version 0.005 required because: allows undef for id
 
 =head3 Mixin::ExtraFields::Param 0.011
 
-=head3 Moose 0.74
+=head3 Moose 0.94
 
-Version 0.74 required because: supports duck_type
+Version 0.94 required because: has the big attribute overhaul
 
 =head3 Moose::Autobox 0.10
 
@@ -152,30 +150,23 @@ Version 0.10 required because: has "each" iterators
 
 =head3 namespace::autoclean
 
-=head3 PPI 1.201
+=head3 PPI 1.212
 
-=head3 Params::Util 0.23
+Version 1.212 required because: fixes parsing of package names with leading-digit parts
 
-Version 0.23 required because: has working _INVOCANT
+=head3 Params::Util 0.38
+
+Version 0.38 required because: has fixes to _IDENTIFIER and _CLASS
 
 =head3 Scalar::Util 1.18
 
-=head3 Sub::Exporter 0.978
+=head3 Sub::Exporter 0.979
 
-Version 0.978 required because: supports custom installer/generator
+Version 0.979 required because: has the INIT collector
 
 =head3 Text::Markdown 1.0.24
 
 Version 1.0.24 required because: has trust_list_start
-
-=head3 YAML::XS
-
-=head1 PENDING INCLUSION:
-
-  # Mac Only
-  requires('App::Addex',                     '0.013' );
-  requires('App::Addex::AddressBook::Apple', '0.006' );
-  requires('Mac::Glue',                      '1.30'  );
 
 =head1 AUTHOR
 
@@ -183,7 +174,7 @@ Version 1.0.24 required because: has trust_list_start
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2009 by Ricardo Signes.
+This software is copyright (c) 2010 by Ricardo Signes.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

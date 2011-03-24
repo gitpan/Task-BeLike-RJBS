@@ -2,7 +2,7 @@ use 5.12.0;
 use warnings;
 package Task::BeLike::RJBS;
 BEGIN {
-  $Task::BeLike::RJBS::VERSION = '20101201.000';
+  $Task::BeLike::RJBS::VERSION = '20110324.000';
 }
 # ABSTRACT: be more like RJBS -- use the modules he likes!
 
@@ -18,7 +18,7 @@ Task::BeLike::RJBS - be more like RJBS -- use the modules he likes!
 
 =head1 VERSION
 
-version 20101201.000
+version 20110324.000
 
 =head1 TASK CONTENTS
 
@@ -30,9 +30,9 @@ Version 1.82 required because: a working --pager
 
 App::Ack also gets us File::Next!
 
-=head3 L<App::Nopaste> 0.21
+=head3 L<App::Nopaste> 0.28
 
-Version 0.21 required because: Gist support via Gist API
+Version 0.28 required because: Gist support via Gist API
 
 =head3 L<App::Whiff>
 
@@ -99,6 +99,8 @@ Version 1.905 required because: merged in Creator and Modifier modules; bug fixe
 
 =head2 Other Libraries I Use
 
+=head3 L<Carp::Always>
+
 =head3 L<Config::INI> 0.011
 
 =head3 L<DBD::SQLite>
@@ -110,6 +112,10 @@ Version 0.044 required because: requires a new enough Data::UUID to work around 
 =head3 L<DateTime> 0.51
 
 Version 0.51 required because: provides CLDR support with fewest known bugs
+
+=head3 L<Devel::Cover>
+
+=head3 L<Devel::NYTProf>
 
 =head3 L<HTML::Element> 3.22
 
@@ -151,11 +157,17 @@ Version 1.212 required because: fixes parsing of package names with leading-digi
 
 Version 0.38 required because: has fixes to _IDENTIFIER and _CLASS
 
+=head3 L<Plack>
+
 =head3 L<Scalar::Util> 1.18
 
 =head3 L<Sub::Exporter> 0.980
 
 Version 0.980 required because: INIT collector; bug fixes
+
+=head3 L<Term::ReadLine::Gnu> 1
+
+Version 1 required because: improves the debugger
 
 =head3 L<Text::Markdown> 1.0.24
 
@@ -171,13 +183,25 @@ Version 0.102080 required because: StackTrace::Auto factored out
 
 Version 0.007 required because: exception passed to C<finally>
 
+=head2 Sanity-Check
+
+These are just here to make sure other things work properly.
+
+=head3 L<Mozilla::CA>
+
+=head3 L<Crypt::SSLeay>
+
+=head3 L<IO::Socket::SSL>
+
+=head3 L<Config::GitLike>
+
 =head1 AUTHOR
 
 Ricardo Signes <rjbs@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2010 by Ricardo Signes.
+This software is copyright (c) 2011 by Ricardo Signes.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

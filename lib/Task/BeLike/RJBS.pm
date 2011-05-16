@@ -2,7 +2,7 @@ use 5.12.0;
 use warnings;
 package Task::BeLike::RJBS;
 BEGIN {
-  $Task::BeLike::RJBS::VERSION = '20110324.000';
+  $Task::BeLike::RJBS::VERSION = '20110516.000';
 }
 # ABSTRACT: be more like RJBS -- use the modules he likes!
 
@@ -18,7 +18,7 @@ Task::BeLike::RJBS - be more like RJBS -- use the modules he likes!
 
 =head1 VERSION
 
-version 20110324.000
+version 20110516.000
 
 =head1 TASK CONTENTS
 
@@ -190,6 +190,8 @@ These are just here to make sure other things work properly.
 =head3 L<Mozilla::CA>
 
 =head3 L<Crypt::SSLeay>
+
+=head3 L<LWP::Protocol::https>
 
 =head3 L<IO::Socket::SSL>
 

@@ -4,7 +4,7 @@ use warnings;
 
 BEGIN { require 5.12.0; }
 
-use ExtUtils::MakeMaker 6.31;
+use ExtUtils::MakeMaker 6.30;
 
 
 
@@ -15,7 +15,7 @@ my %WriteMakefileArgs = (
     'Test::More' => '0.96'
   },
   'CONFIGURE_REQUIRES' => {
-    'ExtUtils::MakeMaker' => '6.31'
+    'ExtUtils::MakeMaker' => '6.30'
   },
   'DISTNAME' => 'Task-BeLike-RJBS',
   'EXE_FILES' => [],
@@ -47,6 +47,7 @@ my %WriteMakefileArgs = (
     'HTML::Element' => '3.22',
     'IO::Socket::SSL' => '0',
     'JSON' => '2.12',
+    'LWP::Protocol::https' => '0',
     'List::MoreUtils' => '0.21',
     'Log::Dispatchouli' => '2.000',
     'Mixin::ExtraFields' => '0.005',
@@ -69,7 +70,7 @@ my %WriteMakefileArgs = (
     'Try::Tiny' => '0.007',
     'namespace::autoclean' => '0'
   },
-  'VERSION' => '20110324.000',
+  'VERSION' => '20110516.000',
   'test' => {
     'TESTS' => 't/*.t'
   }

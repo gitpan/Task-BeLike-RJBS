@@ -2,7 +2,7 @@ use 5.12.0;
 use warnings;
 package Task::BeLike::RJBS;
 BEGIN {
-  $Task::BeLike::RJBS::VERSION = '20110516.000';
+  $Task::BeLike::RJBS::VERSION = '20110621.000';
 }
 # ABSTRACT: be more like RJBS -- use the modules he likes!
 
@@ -18,7 +18,7 @@ Task::BeLike::RJBS - be more like RJBS -- use the modules he likes!
 
 =head1 VERSION
 
-version 20110516.000
+version 20110621.000
 
 =head1 TASK CONTENTS
 
@@ -39,6 +39,11 @@ Version 0.28 required because: Gist support via Gist API
 App::Whiff provides C<whiff>, which replaces C<which>, because C<which> is
 stupid.
 
+=head3 L<App::Uni>
+
+This gets us the "uni" command, which lets you run "uni snowman" to copy and
+paste the character and look funny on IRC.
+
 =head2 Tools for Working with the CPAN
 
 =head3 L<perl> 5.12.0
@@ -52,6 +57,11 @@ Version 1.1002 required because: it has --auto-cleanup
 Version 0.12 required because: it won't install old dists
 
 =head3 L<CPAN::Mini> 0.563
+
+=head3 L<Module::Which>
+
+I use F<which_pm> to find the version and location of installed modules, even
+if two versions are installed in different parts of C<@INC>.
 
 =head2 Tools for Building CPAN Distributions
 

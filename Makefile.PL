@@ -2,7 +2,7 @@
 use strict;
 use warnings;
 
-BEGIN { require 5.12.0; }
+use 5.012000;
 
 use ExtUtils::MakeMaker 6.30;
 
@@ -25,6 +25,7 @@ my %WriteMakefileArgs = (
     'App::Ack' => '1.82',
     'App::Cmd' => '0.308',
     'App::Nopaste' => '0.28',
+    'App::Uni' => '0',
     'App::Whiff' => '0',
     'App::cpanminus' => '1.1002',
     'App::cpanoutdated' => '0.12',
@@ -53,6 +54,7 @@ my %WriteMakefileArgs = (
     'Mixin::ExtraFields' => '0.005',
     'Mixin::ExtraFields::Param' => '0.011',
     'Module::CoreList' => '2.34',
+    'Module::Which' => '0',
     'Moose' => '1.19',
     'Moose::Autobox' => '0.10',
     'Mozilla::CA' => '0',
@@ -70,7 +72,7 @@ my %WriteMakefileArgs = (
     'Try::Tiny' => '0.007',
     'namespace::autoclean' => '0'
   },
-  'VERSION' => '20110516.000',
+  'VERSION' => '20110621.000',
   'test' => {
     'TESTS' => 't/*.t'
   }

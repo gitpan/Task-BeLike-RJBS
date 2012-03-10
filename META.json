@@ -4,7 +4,7 @@
       "Ricardo Signes <rjbs@cpan.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.200007, CPAN::Meta::Converter version 2.110440",
+   "generated_by" : "Dist::Zilla version 4.300009, CPAN::Meta::Converter version 2.120530",
    "license" : [
       "perl_5"
    ],
@@ -24,182 +24,186 @@
             "App::Ack" : "1.82",
             "App::Cmd" : "0.308",
             "App::Nopaste" : "0.28",
-            "App::Uni" : 0,
-            "App::Whiff" : 0,
+            "App::Uni" : "0",
+            "App::Whiff" : "0",
             "App::cpanminus" : "1.1002",
             "App::cpanoutdated" : "0.12",
             "CPAN::Mini" : "0.563",
-            "Carp::Always" : 0,
-            "Config::GitLike" : 0,
+            "Carp::Always" : "0",
+            "Config::GitLike" : "0",
             "Config::INI" : "0.011",
-            "Crypt::SSLeay" : 0,
-            "DBD::SQLite" : 0,
+            "Crypt::SSLeay" : "0",
+            "DBD::SQLite" : "0",
             "Data::GUID" : "0.044",
             "DateTime" : "0.51",
-            "Devel::Cover" : 0,
-            "Devel::NYTProf" : 0,
+            "Devel::Cover" : "0",
+            "Devel::NYTProf" : "0",
             "Dist::Zilla" : "4",
             "Dist::Zilla::PluginBundle::RJBS" : "1.004",
             "Email::Filter" : "1.02",
             "Email::MIME" : "1.905",
-            "Email::Sender" : 0,
-            "Email::Sender::Transport::SQLite" : 0,
+            "Email::Sender" : "0",
+            "Email::Sender::Transport::SQLite" : "0",
             "HTML::Element" : "3.22",
-            "IO::Socket::SSL" : 0,
+            "IO::Socket::SSL" : "0",
             "JSON" : "2.12",
-            "LWP::Protocol::https" : 0,
-            "List::MoreUtils" : "0.21",
+            "LWP::Protocol::https" : "0",
+            "List::AllUtils" : "0",
             "Log::Dispatchouli" : "2.000",
             "Mixin::ExtraFields" : "0.005",
             "Mixin::ExtraFields::Param" : "0.011",
             "Module::CoreList" : "2.34",
-            "Module::Which" : 0,
+            "Module::Which" : "0",
             "Moose" : "1.19",
             "Moose::Autobox" : "0.10",
-            "Mozilla::CA" : 0,
+            "MooseX::StrictConstructor" : "0",
+            "Mozilla::CA" : "0",
             "PPI" : "1.212",
             "Params::Util" : "0.38",
             "Perl::Tidy" : "20071205",
-            "Plack" : 0,
+            "Plack" : "0",
             "Pod::Weaver" : "3.101631",
             "Scalar::Util" : "1.18",
             "Sub::Exporter" : "0.980",
             "Term::ReadLine::Gnu" : "1",
             "Text::Markdown" : "v1.0.24",
             "Throwable" : "0.102080",
-            "Throwable::X" : 0,
+            "Throwable::X" : "0",
             "Try::Tiny" : "0.007",
-            "namespace::autoclean" : 0,
-            "perl" : "v5.12.0"
+            "Unicode::Tussle" : "0",
+            "namespace::autoclean" : "0",
+            "perl" : "v5.12.0",
+            "warnings" : "0"
          }
       },
       "test" : {
          "requires" : {
-            "Test::More" : "0.96"
+            "Test::More" : "0.96",
+            "strict" : "0"
          }
       }
    },
    "release_status" : "stable",
    "resources" : {
-      "homepage" : "http://github.com/rjbs/task-belike-rjbs",
+      "homepage" : "https://github.com/rjbs/task-belike-rjbs",
       "repository" : {
          "type" : "git",
-         "url" : "http://github.com/rjbs/task-belike-rjbs",
-         "web" : "http://github.com/rjbs/task-belike-rjbs"
+         "url" : "https://github.com/rjbs/task-belike-rjbs.git",
+         "web" : "https://github.com/rjbs/task-belike-rjbs"
       }
    },
-   "version" : "20110621.000",
+   "version" : "20120310.000",
    "x_Dist_Zilla" : {
       "plugins" : [
          {
             "class" : "Dist::Zilla::Plugin::CheckPrereqsIndexed",
             "name" : "@RJBS/CheckPrereqsIndexed",
-            "version" : "0.003"
+            "version" : "0.007"
          },
          {
             "class" : "Dist::Zilla::Plugin::GatherDir",
             "name" : "@RJBS/@Basic/GatherDir",
-            "version" : "4.200007"
+            "version" : "4.300009"
          },
          {
             "class" : "Dist::Zilla::Plugin::PruneCruft",
             "name" : "@RJBS/@Basic/PruneCruft",
-            "version" : "4.200007"
+            "version" : "4.300009"
          },
          {
             "class" : "Dist::Zilla::Plugin::ManifestSkip",
             "name" : "@RJBS/@Basic/ManifestSkip",
-            "version" : "4.200007"
+            "version" : "4.300009"
          },
          {
             "class" : "Dist::Zilla::Plugin::MetaYAML",
             "name" : "@RJBS/@Basic/MetaYAML",
-            "version" : "4.200007"
+            "version" : "4.300009"
          },
          {
             "class" : "Dist::Zilla::Plugin::License",
             "name" : "@RJBS/@Basic/License",
-            "version" : "4.200007"
+            "version" : "4.300009"
          },
          {
             "class" : "Dist::Zilla::Plugin::Readme",
             "name" : "@RJBS/@Basic/Readme",
-            "version" : "4.200007"
+            "version" : "4.300009"
          },
          {
             "class" : "Dist::Zilla::Plugin::ExtraTests",
             "name" : "@RJBS/@Basic/ExtraTests",
-            "version" : "4.200007"
+            "version" : "4.300009"
          },
          {
             "class" : "Dist::Zilla::Plugin::ExecDir",
             "name" : "@RJBS/@Basic/ExecDir",
-            "version" : "4.200007"
+            "version" : "4.300009"
          },
          {
             "class" : "Dist::Zilla::Plugin::ShareDir",
             "name" : "@RJBS/@Basic/ShareDir",
-            "version" : "4.200007"
+            "version" : "4.300009"
          },
          {
             "class" : "Dist::Zilla::Plugin::MakeMaker",
             "name" : "@RJBS/@Basic/MakeMaker",
-            "version" : "4.200007"
+            "version" : "4.300009"
          },
          {
             "class" : "Dist::Zilla::Plugin::Manifest",
             "name" : "@RJBS/@Basic/Manifest",
-            "version" : "4.200007"
+            "version" : "4.300009"
          },
          {
             "class" : "Dist::Zilla::Plugin::TestRelease",
             "name" : "@RJBS/@Basic/TestRelease",
-            "version" : "4.200007"
+            "version" : "4.300009"
          },
          {
             "class" : "Dist::Zilla::Plugin::ConfirmRelease",
             "name" : "@RJBS/@Basic/ConfirmRelease",
-            "version" : "4.200007"
+            "version" : "4.300009"
          },
          {
             "class" : "Dist::Zilla::Plugin::UploadToCPAN",
             "name" : "@RJBS/@Basic/UploadToCPAN",
-            "version" : "4.200007"
+            "version" : "4.300009"
          },
          {
             "class" : "Dist::Zilla::Plugin::AutoPrereqs",
             "name" : "@RJBS/AutoPrereqs",
-            "version" : "4.200007"
+            "version" : "4.300009"
          },
          {
             "class" : "Dist::Zilla::Plugin::AutoVersion",
             "name" : "@RJBS/AutoVersion",
-            "version" : "4.200007"
+            "version" : "4.300009"
          },
          {
             "class" : "Dist::Zilla::Plugin::PkgVersion",
             "name" : "@RJBS/PkgVersion",
-            "version" : "4.200007"
+            "version" : "4.300009"
          },
          {
             "class" : "Dist::Zilla::Plugin::MetaConfig",
             "name" : "@RJBS/MetaConfig",
-            "version" : "4.200007"
+            "version" : "4.300009"
          },
          {
             "class" : "Dist::Zilla::Plugin::MetaJSON",
             "name" : "@RJBS/MetaJSON",
-            "version" : "4.200007"
+            "version" : "4.300009"
          },
          {
             "class" : "Dist::Zilla::Plugin::NextRelease",
             "name" : "@RJBS/NextRelease",
-            "version" : "4.200007"
+            "version" : "4.300009"
          },
          {
             "class" : "Dist::Zilla::Plugin::PodSyntaxTests",
             "name" : "@RJBS/PodSyntaxTests",
-            "version" : "4.200007"
+            "version" : "4.300009"
          },
          {
             "class" : "Dist::Zilla::Plugin::Repository",
@@ -215,7 +219,7 @@
                }
             },
             "name" : "@RJBS/TestMoreWithSubtests",
-            "version" : "4.200007"
+            "version" : "4.300009"
          },
          {
             "class" : "Dist::Zilla::Plugin::TaskWeaver",
@@ -225,65 +229,65 @@
          {
             "class" : "Dist::Zilla::Plugin::GithubMeta",
             "name" : "@RJBS/GithubMeta",
-            "version" : "0.12"
+            "version" : "0.28"
          },
          {
             "class" : "Dist::Zilla::Plugin::Git::Check",
             "name" : "@RJBS/@Git/Check",
-            "version" : "1.111590"
+            "version" : "1.120370"
          },
          {
             "class" : "Dist::Zilla::Plugin::Git::Commit",
             "name" : "@RJBS/@Git/Commit",
-            "version" : "1.111590"
+            "version" : "1.120370"
          },
          {
             "class" : "Dist::Zilla::Plugin::Git::Tag",
             "name" : "@RJBS/@Git/Tag",
-            "version" : "1.111590"
+            "version" : "1.120370"
          },
          {
             "class" : "Dist::Zilla::Plugin::Git::Push",
             "name" : "@RJBS/@Git/Push",
-            "version" : "1.111590"
+            "version" : "1.120370"
          },
          {
             "class" : "Dist::Zilla::Plugin::FinderCode",
             "name" : ":InstallModules",
-            "version" : "4.200007"
+            "version" : "4.300009"
          },
          {
             "class" : "Dist::Zilla::Plugin::FinderCode",
             "name" : ":IncModules",
-            "version" : "4.200007"
+            "version" : "4.300009"
          },
          {
             "class" : "Dist::Zilla::Plugin::FinderCode",
             "name" : ":TestFiles",
-            "version" : "4.200007"
+            "version" : "4.300009"
          },
          {
             "class" : "Dist::Zilla::Plugin::FinderCode",
             "name" : ":ExecFiles",
-            "version" : "4.200007"
+            "version" : "4.300009"
          },
          {
             "class" : "Dist::Zilla::Plugin::FinderCode",
             "name" : ":ShareFiles",
-            "version" : "4.200007"
+            "version" : "4.300009"
          },
          {
             "class" : "Dist::Zilla::Plugin::FinderCode",
             "name" : ":MainModule",
-            "version" : "4.200007"
+            "version" : "4.300009"
          }
       ],
       "zilla" : {
          "class" : "Dist::Zilla::Dist::Builder",
          "config" : {
-            "is_trial" : 0
+            "is_trial" : "0"
          },
-         "version" : "4.200007"
+         "version" : "4.300009"
       }
    }
 }

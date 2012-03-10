@@ -1,5 +1,12 @@
 Revision history for Task-BeLike-RJBS
 
+20120310.000 2012-03-10 14:04:11 America/New_York
+              add Unicode::Tussle, because it's cool
+
+              add MooseX::StrictConstructor; please use it!
+
+              switch from List::MoreUtils to List::AllUtils
+
 20110621.000 2011-06-21 22:16:40 America/New_York
               add Module::Which, for which_pm, which I use a lot
 

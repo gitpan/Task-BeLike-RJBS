@@ -1,8 +1,8 @@
 use 5.12.0;
 use warnings;
 package Task::BeLike::RJBS;
-BEGIN {
-  $Task::BeLike::RJBS::VERSION = '20110621.000';
+{
+  $Task::BeLike::RJBS::VERSION = '20120310.000';
 }
 # ABSTRACT: be more like RJBS -- use the modules he likes!
 
@@ -18,7 +18,7 @@ Task::BeLike::RJBS - be more like RJBS -- use the modules he likes!
 
 =head1 VERSION
 
-version 20110621.000
+version 20120310.000
 
 =head1 TASK CONTENTS
 
@@ -43,6 +43,11 @@ stupid.
 
 This gets us the "uni" command, which lets you run "uni snowman" to copy and
 paste the character and look funny on IRC.
+
+=head3 L<Unicode::Tussle>
+
+This is a whole bunch of extra utilities for poking through Unicode data.  It's
+all cool stuff.
 
 =head2 Tools for Working with the CPAN
 
@@ -135,9 +140,7 @@ Version 3.22 required because: has proper XML escaping
 
 Version 2.12 required because: fixes unicode handling from ASCII JSON
 
-=head3 L<List::MoreUtils> 0.21
-
-Version 0.21 required because: includes part()
+=head3 L<List::AllUtils>
 
 =head3 L<Log::Dispatchouli> 2.000
 
@@ -156,6 +159,10 @@ Version 1.19 required because: it has assert_coerce
 =head3 L<Moose::Autobox> 0.10
 
 Version 0.10 required because: has "each" iterators
+
+=head3 L<MooseX::StrictConstructor>
+
+All constructors must be strict!
 
 =head3 L<namespace::autoclean>
 
@@ -213,7 +220,7 @@ Ricardo Signes <rjbs@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2011 by Ricardo Signes.
+This software is copyright (c) 2012 by Ricardo Signes.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

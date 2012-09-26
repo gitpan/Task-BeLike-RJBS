@@ -1,8 +1,8 @@
-use 5.12.0;
+use 5.14.0;
 use warnings;
 package Task::BeLike::RJBS;
 {
-  $Task::BeLike::RJBS::VERSION = '20120310.000';
+  $Task::BeLike::RJBS::VERSION = '20120926.000';
 }
 # ABSTRACT: be more like RJBS -- use the modules he likes!
 
@@ -10,6 +10,7 @@ package Task::BeLike::RJBS;
 1;
 
 __END__
+
 =pod
 
 =head1 NAME
@@ -18,9 +19,19 @@ Task::BeLike::RJBS - be more like RJBS -- use the modules he likes!
 
 =head1 VERSION
 
-version 20120310.000
+version 20120926.000
 
 =head1 TASK CONTENTS
+
+=head2 Perl for Perl's Sake
+
+=head3 L<perl> 5.014
+
+Version 5.014 required because: gotta have my "package NAME BLOCK"
+
+=head3 L<App::grindperl>
+
+=head3 L<App::perlbrew>
 
 =head2 Useful Command-Line Tools
 
@@ -30,9 +41,9 @@ Version 1.82 required because: a working --pager
 
 App::Ack also gets us File::Next!
 
-=head3 L<App::Nopaste> 0.28
+=head3 L<App::Nopaste> 0.34
 
-Version 0.28 required because: Gist support via Gist API
+Version 0.34 required because: Gist support via Gist API v3
 
 =head3 L<App::Whiff>
 
@@ -51,7 +62,9 @@ all cool stuff.
 
 =head2 Tools for Working with the CPAN
 
-=head3 L<perl> 5.12.0
+=head3 L<perl> 5.14.0
+
+Version 5.14.0 required because: it has package NAME BLOCK
 
 =head3 L<App::cpanminus> 1.1002
 
@@ -68,19 +81,23 @@ Version 0.12 required because: it won't install old dists
 I use F<which_pm> to find the version and location of installed modules, even
 if two versions are installed in different parts of C<@INC>.
 
+=head3 L<Pod::Cpandoc>
+
+It's like C<perldoc>, but for stuff you haven't installed (yet?).
+
 =head2 Tools for Building CPAN Distributions
 
 =head3 L<Dist::Zilla> 4
 
 Version 4 required because: newest available
 
-=head3 L<Dist::Zilla::PluginBundle::RJBS> 1.004
+=head3 L<Dist::Zilla::PluginBundle::RJBS> 1.012
 
-Version 1.004 required because: newest available
+Version 1.012 required because: newest available
 
-=head3 L<Module::CoreList> 2.34
+=head3 L<Module::CoreList> 2.68
 
-Version 2.34 required because: has info on 5.13.1
+Version 2.68 required because: newest available
 
 =head3 L<Perl::Tidy> 20071205
 
@@ -145,12 +162,6 @@ Version 2.12 required because: fixes unicode handling from ASCII JSON
 =head3 L<Log::Dispatchouli> 2.000
 
 Version 2.000 required because: it has Log::Dispatchouli::Global
-
-=head3 L<Mixin::ExtraFields> 0.005
-
-Version 0.005 required because: allows undef for id
-
-=head3 L<Mixin::ExtraFields::Param> 0.011
 
 =head3 L<Moose> 1.19
 
@@ -226,4 +237,3 @@ This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-

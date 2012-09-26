@@ -1,5 +1,10 @@
 Revision history for Task-BeLike-RJBS
 
+20120926.000 2012-09-26 12:09:52 America/New_York
+              add App::grindperl, App::perlbrew, perl 5.14.0
+
+              add Pod::Cpandoc
+
 20120310.000 2012-03-10 14:04:11 America/New_York
               add Unicode::Tussle, because it's cool
 

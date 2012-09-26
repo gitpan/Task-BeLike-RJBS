@@ -2,7 +2,7 @@
 use strict;
 use warnings;
 
-use 5.012000;
+use 5.014000;
 
 use ExtUtils::MakeMaker 6.30;
 
@@ -12,6 +12,8 @@ my %WriteMakefileArgs = (
   "ABSTRACT" => "be more like RJBS -- use the modules he likes!",
   "AUTHOR" => "Ricardo Signes <rjbs\@cpan.org>",
   "BUILD_REQUIRES" => {
+    "File::Find" => 0,
+    "File::Temp" => 0,
     "Test::More" => "0.96",
     "strict" => 0
   },
@@ -25,11 +27,13 @@ my %WriteMakefileArgs = (
   "PREREQ_PM" => {
     "App::Ack" => "1.82",
     "App::Cmd" => "0.308",
-    "App::Nopaste" => "0.28",
+    "App::Nopaste" => "0.34",
     "App::Uni" => 0,
     "App::Whiff" => 0,
     "App::cpanminus" => "1.1002",
     "App::cpanoutdated" => "0.12",
+    "App::grindperl" => 0,
+    "App::perlbrew" => 0,
     "CPAN::Mini" => "0.563",
     "Carp::Always" => 0,
     "Config::GitLike" => 0,
@@ -41,7 +45,7 @@ my %WriteMakefileArgs = (
     "Devel::Cover" => 0,
     "Devel::NYTProf" => 0,
     "Dist::Zilla" => 4,
-    "Dist::Zilla::PluginBundle::RJBS" => "1.004",
+    "Dist::Zilla::PluginBundle::RJBS" => "1.012",
     "Email::Filter" => "1.02",
     "Email::MIME" => "1.905",
     "Email::Sender" => 0,
@@ -52,9 +56,7 @@ my %WriteMakefileArgs = (
     "LWP::Protocol::https" => 0,
     "List::AllUtils" => 0,
     "Log::Dispatchouli" => "2.000",
-    "Mixin::ExtraFields" => "0.005",
-    "Mixin::ExtraFields::Param" => "0.011",
-    "Module::CoreList" => "2.34",
+    "Module::CoreList" => "2.68",
     "Module::Which" => 0,
     "Moose" => "1.19",
     "Moose::Autobox" => "0.10",
@@ -64,11 +66,12 @@ my %WriteMakefileArgs = (
     "Params::Util" => "0.38",
     "Perl::Tidy" => 20071205,
     "Plack" => 0,
+    "Pod::Cpandoc" => 0,
     "Pod::Weaver" => "3.101631",
     "Scalar::Util" => "1.18",
     "Sub::Exporter" => "0.980",
     "Term::ReadLine::Gnu" => 1,
-    "Text::Markdown" => "1.0.24",
+    "Text::Markdown" => "v1.0.24",
     "Throwable" => "0.102080",
     "Throwable::X" => 0,
     "Try::Tiny" => "0.007",
@@ -76,7 +79,7 @@ my %WriteMakefileArgs = (
     "namespace::autoclean" => 0,
     "warnings" => 0
   },
-  "VERSION" => "20120310.000",
+  "VERSION" => "20120926.000",
   "test" => {
     "TESTS" => "t/*.t"
   }

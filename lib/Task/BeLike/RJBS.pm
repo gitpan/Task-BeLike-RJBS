@@ -2,7 +2,7 @@ use 5.14.0;
 use warnings;
 package Task::BeLike::RJBS;
 {
-  $Task::BeLike::RJBS::VERSION = '20120926.000';
+  $Task::BeLike::RJBS::VERSION = '20131018.000';
 }
 # ABSTRACT: be more like RJBS -- use the modules he likes!
 
@@ -19,7 +19,7 @@ Task::BeLike::RJBS - be more like RJBS -- use the modules he likes!
 
 =head1 VERSION
 
-version 20120926.000
+version 20131018.000
 
 =head1 TASK CONTENTS
 
@@ -39,8 +39,6 @@ Version 5.014 required because: gotta have my "package NAME BLOCK"
 
 Version 1.82 required because: a working --pager
 
-App::Ack also gets us File::Next!
-
 =head3 L<App::Nopaste> 0.34
 
 Version 0.34 required because: Gist support via Gist API v3
@@ -54,6 +52,10 @@ stupid.
 
 This gets us the "uni" command, which lets you run "uni snowman" to copy and
 paste the character and look funny on IRC.
+
+=head3 L<File::Rename>
+
+This lets me rename a bunch of files by apply a C<s///> expression, or more.
 
 =head3 L<Unicode::Tussle>
 
@@ -167,10 +169,6 @@ Version 2.000 required because: it has Log::Dispatchouli::Global
 
 Version 1.19 required because: it has assert_coerce
 
-=head3 L<Moose::Autobox> 0.10
-
-Version 0.10 required because: has "each" iterators
-
 =head3 L<MooseX::StrictConstructor>
 
 All constructors must be strict!
@@ -231,7 +229,7 @@ Ricardo Signes <rjbs@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2012 by Ricardo Signes.
+This software is copyright (c) 2013 by Ricardo Signes.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

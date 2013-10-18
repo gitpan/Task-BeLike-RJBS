@@ -75,13 +75,10 @@ my %WriteMakefileArgs = (
     "warnings" => 0
   },
   "TEST_REQUIRES" => {
-    "File::Spec" => 0,
-    "IO::Handle" => 0,
-    "IPC::Open3" => 0,
     "Test::More" => "0.96",
     "strict" => 0
   },
-  "VERSION" => "20131018.000",
+  "VERSION" => "20131018.001",
   "test" => {
     "TESTS" => "t/*.t"
   }

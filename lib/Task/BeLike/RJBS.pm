@@ -2,7 +2,7 @@ use 5.14.0;
 use warnings;
 package Task::BeLike::RJBS;
 {
-  $Task::BeLike::RJBS::VERSION = '20131018.000';
+  $Task::BeLike::RJBS::VERSION = '20131018.001';
 }
 # ABSTRACT: be more like RJBS -- use the modules he likes!
 
@@ -19,7 +19,7 @@ Task::BeLike::RJBS - be more like RJBS -- use the modules he likes!
 
 =head1 VERSION
 
-version 20131018.000
+version 20131018.001
 
 =head1 TASK CONTENTS
 

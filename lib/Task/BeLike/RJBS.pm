@@ -2,7 +2,7 @@ use 5.14.0;
 use warnings;
 package Task::BeLike::RJBS;
 {
-  $Task::BeLike::RJBS::VERSION = '20131018.001';
+  $Task::BeLike::RJBS::VERSION = '20131116.000';
 }
 # ABSTRACT: be more like RJBS -- use the modules he likes!
 
@@ -13,13 +13,15 @@ __END__
 
 =pod
 
+=encoding UTF-8
+
 =head1 NAME
 
 Task::BeLike::RJBS - be more like RJBS -- use the modules he likes!
 
 =head1 VERSION
 
-version 20131018.001
+version 20131116.000
 
 =head1 TASK CONTENTS
 
@@ -30,8 +32,6 @@ version 20131018.001
 Version 5.014 required because: gotta have my "package NAME BLOCK"
 
 =head3 L<App::grindperl>
-
-=head3 L<App::perlbrew>
 
 =head2 Useful Command-Line Tools
 
@@ -89,9 +89,9 @@ It's like C<perldoc>, but for stuff you haven't installed (yet?).
 
 =head2 Tools for Building CPAN Distributions
 
-=head3 L<Dist::Zilla> 4
+=head3 L<Dist::Zilla> 5
 
-Version 4 required because: newest available
+Version 5 required because: encoding!
 
 =head3 L<Dist::Zilla::PluginBundle::RJBS> 1.012
 
@@ -105,9 +105,9 @@ Version 2.68 required because: newest available
 
 Version 20071205 required because: supports 5.10
 
-=head3 L<Pod::Weaver> 3.101631
+=head3 L<Pod::Weaver> 4
 
-Version 3.101631 required because: it understands PODNAME comments
+Version 4 required because: encoding!
 
 =head2 Application Frameworks
 
